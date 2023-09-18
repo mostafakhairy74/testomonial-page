@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #eee;
+}
+
+#testominals{
+    display: flex;
+    flex-direction: column;
+    margin: 7rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#testominals h2{
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 700;
+}
+#testominals .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.col{
+    justify-content: center;
+    text-align: center;
+    margin: 0 15px 0 15px;
+    background-color: white;
+    padding: 30px 30px ;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+#testominals .row img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#testominals .border{
+    width: 150px;
+    height: 4px;
+    background-color: red;
+    margin-bottom: 15px;
+}
+
+#testominals .row .col .star{
+    color: red;
+    margin: 15px 0;
+}
+
+#testominals .row .col p{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+
+}
+/* tablet */
+@media (max-width:900px){
+    #testominals{
+        margin: 7rem 1rem;
+        
+    }
+    #testominals h2{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .col{
+        margin: 0 5px 0 5px;
+        padding: 20px 20px;
+    }
+    #testominals .row img{
+        width: 150px;
+        height: 150px;
+    }
+    #testominals .row .col p{
+        font-size: 12px;
+    }
+    #testominals .row .col h3{
+        font-size: 15px;
+    }
+}
+
+/* mobile */
+@media (max-width:700px){
+    #testominals .row{
+        flex-direction: column;
+    }
+    .col{
+        margin: 15px 0 15px 0;
+    }
+}
